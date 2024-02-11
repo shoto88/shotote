@@ -1,0 +1,31 @@
+[project]
+name = "str"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "shoto88", email = "shotoharu@icloud.com" }
+]
+dependencies = [
+    "streamlit>=1.31.0",
+    "qrcode>=7.4.2",
+    "pillow>=10.2.0",
+]
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[project.scripts]
+hello = "str:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/str"]
