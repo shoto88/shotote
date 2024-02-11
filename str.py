@@ -21,8 +21,8 @@ if st.button('QRコード生成'):
 
 
 
-p = Path()
-file_list = list(p.glob('*'))
+#p = Path()
+#file_list = list(p.glob('*'))
 #print(file_list)
 #print(str(file_list[0]).replace('<ff>',''))
     qr = qrcode.QRCode(
